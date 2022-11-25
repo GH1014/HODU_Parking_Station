@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HODU PARKING STATION"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:background="@drawable/square_background_border_black"
+                android:padding="2dp"
+                android:id="@+id/Car_img_01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="55dp"
+                android:src="@drawable/carimg02" />
+
+            <ImageView
+                android:background="@drawable/square_background_border_black"
+                android:padding="2dp"
+                android:id="@+id/Car_img_02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/carimg02" />
+
+            <ImageView
+                android:background="@drawable/square_background_border_black"
+                android:padding="2dp"
+                android:id="@+id/Car_img_03"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/carimg02" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:background="@drawable/square_background_border_black"
+                android:padding="2dp"
+                android:id="@+id/Car_img_04"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="55dp"
+                android:src="@drawable/carimg02" />
+
+            <ImageView
+                android:background="@drawable/square_background_border_black"
+                android:padding="2dp"
+                android:id="@+id/Car_img_05"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/carimg02" />
+
+            <ImageView
+                android:background="@drawable/square_background_border_black"
+                android:padding="2dp"
+                android:id="@+id/Car_img_06"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/carimg02" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:text="사용 가능 : "
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/carimg02" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:text="사용 중 : "
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/carimg01" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:text="내 자동차 : "
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/carimg03" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/square_background_border_black"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="주차 구역"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal">
+            </TextView>
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이용 가능"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal">
+            </TextView>
+            <LinearLayout
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/useStationNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+               >
+                </TextView>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="면"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                  >
+                </TextView>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/totalStationNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="면"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
